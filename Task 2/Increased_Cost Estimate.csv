@@ -1,0 +1,25 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate > us-east-1,US East (N. Virginia),cf,Amazon CloudFront,0,435,5220,USD,"Data transfer out to internet (5000 GB per month), Number of requests (HTTPS) (10000000 per month)"
+My Estimate > us-east-1,US East (N. Virginia),ec2,Amazon EC2,0,2067.24,24806.88,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (3000 GB), Instance type (m5a.4xlarge)"
+My Estimate > us-east-1,US East (N. Virginia),redis,Amazon ElastiCache,0,909.58,10914.96,USD,"Nodes (2), Instance type (cache.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Standard), Pricing strategy (OnDemand), Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand)"
+My Estimate > us-east-1,US East (N. Virginia),db,Amazon RDS for PostgreSQL,0,4518.8,54225.6,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m2.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+My Estimate > us-east-1,US East (N. Virginia),route 53,Amazon Route 53,0,4.5,54,USD,"Hosted Zones (1), Basic Checks Within AWS (1)"
+My Estimate > us-east-1,US East (N. Virginia),s3,S3 Standard,0,439,5268,USD,S3 Standard storage (5000 GB per month)
+My Estimate > us-east-1,US East (N. Virginia),s3,Data Transfer,0,0,0,USD,
+My Estimate > us-east-1,US East (N. Virginia),lb,Application Load Balancer,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
+My Estimate > us-east-2,US East (Ohio),lb,Application Load Balancer,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
+My Estimate > us-east-2,US East (Ohio),s3,S3 Standard,0,439,5268,USD,S3 Standard storage (5000 GB per month)
+My Estimate > us-east-2,US East (Ohio),s3,Data Transfer,0,0,0,USD,
+My Estimate > us-east-2,US East (Ohio),route 53,Amazon Route 53,0,4.5,54,USD,"Hosted Zones (1), Basic Checks Within AWS (1)"
+My Estimate > us-east-2,US East (Ohio),db,Amazon RDS for PostgreSQL,0,4726.12,56713.44,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+My Estimate > us-east-2,US East (Ohio),redis,Amazon ElastiCache,0,909.58,10914.96,USD,"Nodes (2), Instance type (cache.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Standard), Pricing strategy (OnDemand), Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand)"
+My Estimate > us-east-2,US East (Ohio),ec2,Amazon EC2,0,2067.24,24806.88,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (3000 GB), Instance type (m5a.4xlarge)"
+My Estimate > us-east-2,US East (Ohio),cf,Amazon CloudFront,0,435,5220,USD,"Data transfer out to internet (5000 GB per month), Number of requests (HTTPS) (10000000 per month)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+"In case the budget is increased to 20.000, I would like to extend the system to become multi-regional for disaster recovery purpose.",,,,,,,,
+"All services will have standby instances in us-east-2 region, so that in the case of a regional outage, I can quickly react and recover the system.",,,,,,,,
